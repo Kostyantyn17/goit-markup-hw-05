@@ -408,7 +408,8 @@ p {
   padding: 0;
   width: calc((100% - 48px) / 3);
 }
-.portfolio-item:hover .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
   transform: translateY(0);
 }
 .overlay {
@@ -550,7 +551,9 @@ p {
   border-radius: 4px;
 }
 .modal-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   width: 24px;
   height: 24px;
@@ -568,3 +571,4 @@ p {
   fill: var(--white);
   background-color: var(--ocean);
 }
+
